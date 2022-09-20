@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Product card using HTML, CSS and JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="img-thumbnail">
+          <img id="bigImg" src="img/apple1.png" alt="" />
+        </div>
+        <div class="smallImg-box">
+          <div></div>
+          <img
+            onclick="clickImg(this)"
+            class="smallImg"
+            src="img/apple.png"
+            alt=""
+          />
+          <img
+            onclick="clickImg(this)"
+            class="smallImg"
+            src="img/apple1.png"
+            alt=""
+          />
+          <img
+            onclick="clickImg(this)"
+            class="smallImg"
+            src="img/apple3.png"
+            alt=""
+          />
+        </div>
+        <div class="card-body">
+          <h1 class="price">Price: $45</h1>
+          <h2 class="title">Best Apple fresh firm</h2>
+          <p class="details">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem esse repudiandae, eligendi ratione soluta obcaecati.
+          </p>
+          <button class="btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
